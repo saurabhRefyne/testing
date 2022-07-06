@@ -18,10 +18,10 @@ jobs:
       - name: Check for changes
         id: checkForChanges
         run: |
-          git diff --name-only ${{ github.event.before }} ${{ github.sha }} | cut -d/ -f1 | sort -u
+          echo ::set-output name=chagne_dir::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | cut -d/ -f1 | sort -u)
       - name: echo output
         run: |
-          echo ${{ steps.checkForChanges.outputs.grepValue }}
+          echo ${{ steps.checkForChanges.outputs.chagne_dir }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
