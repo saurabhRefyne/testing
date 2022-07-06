@@ -12,10 +12,13 @@ jobs:
         node-version: [ 10.x ]
     steps:
       - name: checkout
-        uses: actions/checkout@master
-      - name: test
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Check for changes
+        id: checkForChanges
         run: |
-          echo "::set-output name=files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | cut -d/ -f1 | sort -u)"
+          echo "::set-output name=grepValue::$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -c '^proxy' )"
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
