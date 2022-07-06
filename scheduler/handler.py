@@ -42,7 +42,7 @@ def __get_req(url: str, params: dict = {}, headers: dict = {}):
 def __post_req(url: str, payload: dict = {}, headers: dict = {}):
     response = requests.get(url=url, data=payload, headers=headers)
     if response.status_code // 100 != 2:
-        logger.error(f'invalid status code error: {response.text}')
+        logger.error(f'invalid status codef error: {response.text}')
         raise Exception('')
     return response
 
