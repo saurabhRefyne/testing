@@ -34,7 +34,7 @@ def __get_config():
 def __get_req(url: str, params: dict = {}, headers: dict = {}):
     response = requests.get(url=url, params=params, headers=headers)
     if response.status_code // 100 != 2:
-        logger.error(f'invalid status code errors: {response.text}')
+        logger.error(f'invalid status code error: {response.text}')
         raise Exception('')
     return response
 
