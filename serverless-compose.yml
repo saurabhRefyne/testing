@@ -1,0 +1,6 @@
+services:
+  scheduler:
+    path: scheduler
+
+  sftp_auth:
+    path: sftp_auth

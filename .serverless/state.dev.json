@@ -1,0 +1,12 @@
+{
+  "service": {
+    "id": "ku26o9"
+  },
+  "components": {
+    "scheduler": {
+      "state": {
+        "detectedFrameworkVersion": "3.19.0"
+      }
+    }
+  }
+}
