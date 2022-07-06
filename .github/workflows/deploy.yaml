@@ -19,6 +19,9 @@ jobs:
         id: checkForChanges
         run: |
           echo "::set-output name=grepValue::$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -c '^proxy' )"
+      - name: echo output
+        run: |
+          echo ${{ steps.checkForChanges.outputs.grepValue }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
