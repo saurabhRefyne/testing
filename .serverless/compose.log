@@ -1,14 +1,20 @@
-serverless › Invoking "deploy" on service "scheduler"
+
+Deploying to stage dev
+scheduler › waiting
+sftp_auth › waiting
 scheduler › deploying
+sftp_auth › deploying
 scheduler › Running "serverless deploy --stage dev"
+sftp_auth › Running "serverless deploy --stage dev"
 scheduler › Environment: darwin, node 16.14.2, framework 3.19.0, plugin 6.2.2, SDK 4.3.2
 scheduler › Docs:        docs.serverless.com
 scheduler › Support:     forum.serverless.com
 scheduler › Bugs:        github.com/serverless/serverless/issues
 scheduler › Error:
 scheduler › Serverless plugin "serverless-python-requirements" not found. Make sure it's installed and listed in the "plugins" section of your serverless config file. Run "serverless plugin install -n serverless-python-requirements" to install it.
-scheduler › error
-scheduler › Error:
-scheduler › Serverless plugin "serverless-python-requirements" not found. Make sure it's installed and listed in the "plugins" section of your serverless config file. Run "serverless plugin install -n serverless-python-requirements" to install it.
-scheduler › 
-Request network error: FetchError: network timeout at: https://sp-notifications-and-metrics-v1.serverless-platform.com/
+sftp_auth › Environment: darwin, node 16.14.2, framework 3.19.0, plugin 6.2.2, SDK 4.3.2
+sftp_auth › Docs:        docs.serverless.com
+sftp_auth › Support:     forum.serverless.com
+sftp_auth › Bugs:        github.com/serverless/serverless/issues
+sftp_auth › Error:
+sftp_auth › Serverless plugin "serverless-python-requirements" not found. Make sure it's installed and listed in the "plugins" section of your serverless config file. Run "serverless plugin install -n serverless-python-requirements" to install it.

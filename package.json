@@ -1,9 +1,1 @@
-{
-  "name": "testing-stuff",
-  "description": "",
-  "version": "0.1.0",
-  "dependencies": {
-    "serverless": "^3.19.0",
-    "serverless-python-requirements": "^5.1.0"
-  }
-}
+

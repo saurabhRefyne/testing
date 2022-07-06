@@ -7,6 +7,11 @@
       "state": {
         "detectedFrameworkVersion": "3.19.0"
       }
+    },
+    "sftp_auth": {
+      "state": {
+        "detectedFrameworkVersion": "3.19.0"
+      }
     }
   }
 }
